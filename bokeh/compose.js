@@ -10,6 +10,150 @@ document.body.addEventListener('click', () => {
 })
 
 
+let loadData = function(mind,body,soul) {
+    let title;
+    let btitle = loadbody(body);
+    let mtitle = loadmind(mind);
+    let stitle = loadsoul(soul);
+    title = mtitle + " - "  + btitle + " - "+ stitle;
+    $("#convo_title").html(title);
+}
+
+let loadbody = function(body) {
+    let theurl = '../images/Card_Pictures/Selections/';
+    let bodysource;
+    let title;
+    switch (body) {
+        case 'meghan':
+            bodysource = meghan.body;
+            title = meghan.shortname + "\(body\)";
+            break;
+        case 'ugochi':
+            bodysource = ugochi.body;
+            title = meghan.shortname + "\(body\)";
+            break;
+        case 'eve':
+            bodysource = eve.body;
+            title = meghan.shortname + "\(body\)";
+            break;
+        case 'lois':
+            bodysource = lois.body;
+            title = meghan.shortname + "\(body\)";
+            break;
+        case 'melanie':
+            bodysource = melanie.body;
+            title =  melanie.shortname + "\(body\)";
+            break;
+        case 'jessica':
+            bodysource = jessica.body;
+            title =  jessica.shortname + "\(body\)";
+            break;
+        case 'azizi':
+            bodysource = azizi.body;
+            title =  azizi.shortname + "\(body\)";
+            break;
+        case 'daughter':
+            bodysource = daughter.body;
+            title =  daughter.shortname + "\(body\)";
+            break;
+    }
+    $("#herbody").attr('src', theurl + bodysource);
+   return title;
+}
+
+let loadmind = function(mind) {
+    let mindsource;
+    let title;
+    switch (mind) {
+        case 'meghan':
+            mindsource = meghan.mind;
+            title = meghan.shortname + "\(mind\)";
+            break;
+        case 'ugochi':
+            mindsource = ugochi.mind;
+            title = ugochi.shortname + "\(mind\)";
+            break;
+        case 'eve':
+            mindsource = eve.mind;
+            title =  eve.shortname + "\(mind\)";
+            break;
+        case 'lois':
+            mindsource = lois.mind;
+            title =  lois.shortname + "\(mind\)";
+            break;
+        case 'melanie':
+            mindsource = melanie.mind;
+            title =  melanie.shortname + "\(mind\)";
+            break;
+        case 'jessica':
+            mindsource = jessica.mind;
+            title =  jessica.shortname + "\(mind\)";
+            break;
+        case 'azizi':
+            mindsource = azizi.mind;
+            title =  azizi.shortname + "\(mind\)";
+            break;
+        case 'daughter':
+            mindsource = daughter.mind;
+            title =  daughter.shortname + "\(mind\)";
+            break;
+    }
+    $("#mind_text").html(mindsource);
+    return title;
+}
+
+let loadsoul = function(soul) {
+    let theurl = "../sound/";
+    let soulsource;
+    let title;
+    switch (soul) {
+        case 'meghan':
+            soulsource = meghan.soul;
+            title =  daughter.shortname + "\(soul\)";
+            break;
+        case 'ugochi':
+            soulsource = ugochi.soul;
+            title =  ugochi.shortname + "\(soul\)";
+            break;
+        case 'eve':
+            soulsource = eve.soul;
+            title =  eve.shortname + "\(soul\)";
+            break;
+        case 'lois':
+            soulsource = lois.soul;
+            title =  lois.shortname + "\(soul\)";
+            break;
+        case 'melanie':
+            soulsource = melanie.soul;
+            title =  melanie.shortname + "\(soul\)";
+            break;
+        case 'jessica':
+            soulsource = jessica.soul;
+            title =  jessica.shortname + "\(soul\)";
+            break;
+        case 'azizi':
+            soulsource = azizi.soul;
+            title =  azizi.shortname + "\(soul\)";
+            break;
+        case 'daughter':
+            soulsource = daughter.soul;
+            title =  daughter.shortname + "\(soul\)";
+            break;
+    }
+    $("#soul").attr('src', theurl + soulsource);
+    return title;
+}
+
+
+$(document).ready(function() {
+    let body = sessionStorage.getItem('body');
+    let mind = sessionStorage.getItem('mind');
+    let soul = sessionStorage.getItem('soul');
+    let title = loadData(mind,body,soul);
+    document.getElementById("audiosoul").load();
+});
+
+
 let daughter =
     {
         name:"Our future daughter",
@@ -106,7 +250,6 @@ let eve =
         shortname: "Eve"
     };
 
-
 let melanie =
     {
         name:"Melanie N. Latson, Ed. D. Scholar-Practitioner",
@@ -192,131 +335,5 @@ let meghan =
         body: "Meghan.jpg",
         shortname: "Meghan"
     };
-
-let loadData = function(mind,body,soul) {
-    let title;
-    let btitle = loadbody(body);
-    let mtitle = loadmind(mind);
-    let stitle = loadsoul(soul);
-}
-
-let loadbody = function(body) {
-    let theurl = '../images/Card_Pictures/Selections/';
-    let bodysource;
-    let title;
-    switch (body) {
-        case 'meghan':
-            bodysource = meghan.body;
-            title = meghan.shortname + "\(body\)";
-            break;
-        case 'ugochi':
-            bodysource = ugochi.body;
-            title = meghan.shortname + "\(body\)";
-            break;
-        case 'eve':
-            bodysource = eve.body;
-            title = meghan.shortname + "\(body\)";
-            break;
-        case 'lois':
-            bodysource = lois.body;
-            title = meghan.shortname + "\(body\)";
-            break;
-        case 'melanie':
-            bodysource = melanie.body;
-            title = title + melanie.shortname + "\(body\)";
-            break;
-        case 'jessica':
-            bodysource = jessica.body;
-            title = title + jessica.shortname + "\(body\)";
-            break;
-        case 'azizi':
-            bodysource = azizi.body;
-            title = title + azizi.shortname + "\(body\)";
-            break;
-        case 'daughter':
-            bodysource = daughter.body;
-            title = title + daughter.shortname + "\(body\)";
-            break;
-    }
-    $("#herbody").attr('src', theurl + bodysource);
-   return title;
-}
-
-let loadmind = function(mind) {
-    let mindsource;
-    let title;
-    switch (mind) {
-        case 'meghan':
-            mindsource = meghan.mind;
-            break;
-        case 'ugochi':
-            mindsource = ugochi.mind;
-            break;
-        case 'eve':
-            mindsource = eve.mind;
-            break;
-        case 'lois':
-            mindsource = lois.mind;
-            break;
-        case 'melanie':
-            mindsource = melanie.mind;
-            break;
-        case 'jessica':
-            mindsource = jessica.mind;
-            break;
-        case 'azizi':
-            mindsource = azizi.mind;
-            break;
-        case 'daughter':
-            mindsource = daughter.mind;
-            break;
-    }
-    $("#mind_text").html(mindsource);
-}
-
-let loadsoul = function(soul) {
-    let theurl = "../sound/";
-    let soulsource;
-    let title;
-    switch (soul) {
-        case 'meghan':
-            soulsource = meghan.soul;
-            break;
-        case 'ugochi':
-            soulsource = ugochi.soul;
-            break;
-        case 'eve':
-            soulsource = eve.soul;
-            break;
-        case 'lois':
-            soulsource = lois.soul;
-            break;
-        case 'melanie':
-            soulsource = melanie.soul;
-            break;
-        case 'jessica':
-            soulsource = jessica.soul;
-            break;
-        case 'azizi':
-            soulsource = azizi.soul;
-            break;
-        case 'daughter':
-            soulsource = daughter.soul;
-            break;
-    }
-    $("#soul").attr('src', theurl + soulsource);
-
-}
-
-
-$(document).ready(function() {
-    let body = sessionStorage.getItem('body');
-    let mind = sessionStorage.getItem('mind');
-    let soul = sessionStorage.getItem('soul');
-    let title = loadData(mind,body,soul);
-    document.getElementById("audiosoul").load();
-});
-
-
 
 
