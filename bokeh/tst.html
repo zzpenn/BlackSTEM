@@ -1,42 +1,50 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <title>Composed Conversation</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Essential Eve</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="compose.css">
 
-
 </head>
-<body data-new-gr-c-s-check-loaded="14.1157.0" data-gr-ext-installed="">
+<body>
 <!-- partial:index.partial.html -->
 
 <div id="app">
-    <canvas id="webgl-canvas" data-engine="three.js r160" width="1680" height="881" style="display: block; width: 1680px; height: 881px;"></canvas>
-    <div class="div1 name">
-        <audio controls="" autoplay="">
-            <source id="soul" src="../sound/Meghan.mp3" type="audio/mp3">
-            Your browser does not support the audio element
-        </audio>
-    </div>
-    <div class="div2 name">
-        <img id="herbody" class="picture" src="../images/Card_Pictures/Selections/Jessica.jpg">
-    </div>
-    <div class="div3">
-        <p class="name">
-            <span id="heading" class="compose_header"></span><br>
-            <span id="mind_title">The Lesson for the Teacher</span> <br>
-            <span id="mind_text">LMind</span>
+  <canvas id="webgl-canvas"></canvas>
+<div class="div1 name">
+    <div class="topmargin10"><a href="/"><i class="material-icons md-48">view_quilt</i></a></div>
+</div>
+   <div class="div2 name">
+       <iframe width="660" height="560" src="https://www.youtube.com/embed/wEZtyGuxeqU?si=9bI99ujuloWt4EAH"
+               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+               encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
+    <div class="div3 scrollingDiv">
+      <div> <span class="compose_header">About Lois</span><br></div>
+        <p class="name mind">
+            <span class="compose_header">About Lois</span><br>
+            Lois Mailou Jones was more than an artist; she was a cultural bridge between continents and a pioneering educator. Her work and life story offer invaluable insights into the Black experience, the dynamics of the art world in the 20th century, and the power of art as a tool for social change.
+            Born in Boston, Massachusetts, in 1905, Lois Mailou Jones was introduced to a culturally rich society yet segregated by race. Boston's early 20th-century atmosphere was marked by a burgeoning Black intellectual and artistic community despite the racial challenges of the era.
+            Jones's parents were instrumental in her early development. Her mother, a talented pianist, and her father, a dedicated building superintendent, emphasized the importance of education and the arts (Johnson, 2018). This nurturing environment cultivated Jones's interest in art from a young age.
+            Her education shaped Jones's artistic journey. She attended the Boston High School of Practical Arts and later the School of the Museum of Fine Arts, Boston. Her academic pursuit continued at Howard University, where she became a distinguished faculty member. A scholarship allowed her to study at the prestigious Académie Julian in Paris, broadening her artistic vision and style.
+            Jones's tenure at Howard University was marked by her commitment to nurturing the next generation of Black artists. She was a beloved figure who significantly influenced the Washington Color School movement.
+            Jones's art evolved from early works influenced by her New England upbringing to vibrant compositions reflecting her travels in France, Haiti, and Africa. Her paintings are celebrated for their intricate designs, bold colors, and thematic depth, exploring themes of race, identity, and social justice.
+            As an educator, Jones strived to pass down her love of art, art history, and culture to her students. Her pedagogy and praxis centered the real world application of art as a form of resistance and authentic engagement in liberation movements domestically and abroad.
+            Lois Mailou Jones honored her students’ lived experiences and legitimate funds of knowledge over the course of her tenure as an educator. Her dedication to her students’ success went beyond her academic expectations for them. Jones nurtured her students’ love of African Diasporic artistic representations and believed in her role as a co-conspirator and advocate.
+            Jones's legacy is profound. Her work resides in prestigious collections worldwide, including the Smithsonian American Art Museum. She broke racial and gender barriers, paving the way for future generations of artists. Her work inspires discussions on diversity and representation in the arts.
         </p>
     </div>
+
 </div>
 
 
 <!-- partial -->
-<script src="../js/libraries/jquery-3.7.1.min.js"></script>
-<script type="module" src="compose.js"></script>
+  <script type="module" src="compose.js"></script>
 
-
-<footer>
-
+</body>
+<footer class="name">
+    <a style="color: white" href="../credits.html">Brown Unicorns Site Credits</a>
 </footer>
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+</html>

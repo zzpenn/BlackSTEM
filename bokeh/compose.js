@@ -185,6 +185,7 @@ let loadsoul = function(soul) {
             break;
     }
     $("#soul").attr('src', theurl + soulsource);
+    document.getElementById("audiosoul").load();
     return title;
 }
 
@@ -199,7 +200,7 @@ $(document).ready(function() {
     } else {
         let title = loadData(mind, body, soul);
     }
-    document.getElementById("audiosoul").load();
+
 });
 
 

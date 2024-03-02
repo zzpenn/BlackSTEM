@@ -15,7 +15,9 @@ let compose = function() {
     }
     if ((body === soul) && (body === mind)) {
         if (body === 'eve') {
-            page = 'Eve.html'
+            page = 'Eve.html';
+        } else if (body === 'lois') {
+            page = 'Lois.html';
         } else {
             page= 'dynamic_compose.html';
         }
@@ -23,5 +25,5 @@ let compose = function() {
     sessionStorage.setItem("mind", mind);
     sessionStorage.setItem("body", body);
     sessionStorage.setItem('soul', soul);
-    location.replace(comp_url+page);
+    location.assign(comp_url+page);
 }

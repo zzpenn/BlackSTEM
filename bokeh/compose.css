@@ -17,7 +17,7 @@ body, html, #app {
 /*  grid-template-columns:  1%, 1fr, 1fr;
   grid-template-rows: 100px,auto;*/
   grid-template-columns: 40px 1fr 1fr;
-  grid-template-rows: 80px auto auto 200px;
+  grid-template-rows: 100px auto auto 200px;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
   height: 100%;
@@ -25,12 +25,14 @@ body, html, #app {
 
 
 .div1 {
+  margin-top: 5px;
   grid-column: 2 / span 1;
   grid-row: 1 / 1;
   align-self: center;
 
 }
 .div2 {
+  margin-top: 5px;
   grid-column: 2 / span 1;
   grid-row: 2 / span 2;
   align-self: start;
@@ -41,9 +43,7 @@ body, html, #app {
 }
 .div3a {
   grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
-  align-self: start;
-  z-index: 3;
+  grid-row: 1 / span 3;
 }
 
 p.title {
