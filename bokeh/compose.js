@@ -19,6 +19,50 @@ let loadData = function(mind,body,soul) {
     $("#convo_title").html(title);
 }
 
+let loadBio = function(mind) {
+    loadbody(mind);
+    loadsoul(mind);
+    let mindsource;
+    let title;
+    switch (mind) {
+        case 'meghan':
+            mindsource = meghan.bio;
+            title = "About " + meghan.shortname;
+            break;
+        case 'ugochi':
+            mindsource = ugochi.bio;
+            title = "About " + ugochi.shortname;
+            break;
+        case 'eve':
+            mindsource = eve.bio;
+            title = "About " +  eve.shortname;
+            break;
+        case 'lois':
+            mindsource = lois.bio;
+            title =  "About " + lois.shortname;
+            break;
+        case 'melanie':
+            mindsource = melanie.bio;
+            title =   "About " + melanie.shortname;
+            break;
+        case 'jessica':
+            mindsource = jessica.bio;
+            title =  "About " + jessica.shortname;
+            break;
+        case 'azizi':
+            mindsource = azizi.bio;
+            title =  "About " + azizi.shortname;
+            break;
+        case 'daughter':
+            mindsource = daughter.bio;
+            title =  "About " + daughter.shortname;
+            break;
+    }
+    $("#mind_text").html(mindsource);
+    $("#convo_title").html(title);
+
+}
+
 let loadbody = function(body) {
     let theurl = '../images/Card_Pictures/Selections/';
     let bodysource;
@@ -30,15 +74,15 @@ let loadbody = function(body) {
             break;
         case 'ugochi':
             bodysource = ugochi.body;
-            title = meghan.shortname + "\(body\)";
+            title = ugochi.shortname + "\(body\)";
             break;
         case 'eve':
             bodysource = eve.body;
-            title = meghan.shortname + "\(body\)";
+            title = eve.shortname + "\(body\)";
             break;
         case 'lois':
             bodysource = lois.body;
-            title = meghan.shortname + "\(body\)";
+            title = lois.shortname + "\(body\)";
             break;
         case 'melanie':
             bodysource = melanie.body;
@@ -145,11 +189,16 @@ let loadsoul = function(soul) {
 }
 
 
+
 $(document).ready(function() {
     let body = sessionStorage.getItem('body');
     let mind = sessionStorage.getItem('mind');
     let soul = sessionStorage.getItem('soul');
-    let title = loadData(mind,body,soul);
+    if ((body === mind) && (mind === soul)) {
+        let title = loadBio(mind);
+    } else {
+        let title = loadData(mind, body, soul);
+    }
     document.getElementById("audiosoul").load();
 });
 
@@ -183,7 +232,7 @@ let jessica =
             "The evolution of STEM education, an emphasis on social justice, and the recognition of diversity's importance have influenced my teaching " +
             "and reinforced my belief in education's transformative power. Reflecting on my journey, I see my path as a testament to the resilience of " +
             "Black women in STEM. I aim to inspire future generations to challenge the status quo and contribute to a more equitable world, highlighting " +
-            "the collective strength and perseverance required to forge new paths in the STEM fields.",
+            "the collective strength and perseverance required to forge new paths in the STEM fields.<br><br>",
         body: "Jessica.jpg",
         shortname: "Jessica"
     };
@@ -192,7 +241,7 @@ let azizi =
     {
         name:"Azizi Penn",
         bio: "ABio",
-        soul:"ASoul",
+        soul:"Azizi.mp3",
         mind: "AMind",
         body: "Azizi.jpg",
         shortname: "Azizi"
@@ -209,9 +258,11 @@ let lois =
             "Jones's art evolved from early works influenced by her New England upbringing to vibrant compositions reflecting her travels in France, Haiti, and Africa. Her paintings are celebrated for their intricate designs, bold colors, and thematic depth, exploring themes of race, identity, and social justice." +
             "As an educator, Jones strived to pass down her love of art, art history, and culture to her students. Her pedagogy and praxis centered the real world application of art as a form of resistance and authentic engagement in liberation movements domestically and abroad." +
             "Lois Mailou Jones honored her students’ lived experiences and legitimate funds of knowledge over the course of her tenure as an educator. Her dedication to her students’ success went beyond her academic expectations for them. Jones nurtured her students’ love of African Diasporic artistic representations and believed in her role as a co-conspirator and advocate. " +
-            "Jones's legacy is profound. Her work resides in prestigious collections worldwide, including the Smithsonian American Art Museum. She broke racial and gender barriers, paving the way for future generations of artists. Her work inspires discussions on diversity and representation in the arts.",
+            "Jones's legacy is profound. Her work resides in prestigious collections worldwide, including the Smithsonian American Art Museum. She broke racial and gender barriers, paving the way for future generations of artists. Her work inspires discussions on diversity and representation in the arts.<br><br><br>",
         soul:"Lois.mp3",
-        mind: "“The guard saw me looking at the painting and said, ‘I guess you like art, don't you?’ I said to myself that he doesn't know that the painting is mine hanging there. And so that's how it was way back in those early days; I was exhibiting at all of the big museums, but they never knew that I was black because I either shipped my works or had a white person deliver them. Now you see how difficult it was.",
+        mind: "“The guard saw me looking at the painting and said, ‘I guess you like art, don't you?’ I said to myself that he doesn't know that the " +
+            "painting is mine hanging there. And so that's how it was way back in those early days; I was exhibiting at all of the big museums, " +
+            "but they never knew that I was black because I either shipped my works or had a white person deliver them. Now you see how difficult it was.<br><br>",
         body: "Lois.jpg",
         shortname: "Lois"
     };
@@ -229,9 +280,9 @@ let eve =
             "Ewing is an associate professor in the Department of Race, Diaspora, and Indigeneity " +
             "at the University of Chicago. Her work has been published in The New Yorker, " +
             "The Atlantic, The New York Times, and many other venues. Currently she is working on her next book, " +
-            "Original Sins: The (Mis)education of Black and Native Children and the Construction of American Racism, which will be published by One World. ",
+            "Original Sins: The (Mis)education of Black and Native Children and the Construction of American Racism, which will be published by One World.<br><br> ",
         soul:"Eve.mp3",
-        mind: "<div class='mind_title'>Testify</div><br>" +
+        mind: "<div class='mind_title'>Testify</div>" +
             "i stand before you to say <br>" +
             "that today i walked home<br>" +
             "& caught the light through<br>" +
@@ -263,7 +314,7 @@ let eve =
             "not dead we are not dead <br>" +
             "we are not dead we are not<br>" +
             "dead <br>" +
-            "yet",
+            "yet<br><br>",
         body: "Eve.jpg",
         shortname: "Eve"
     };
@@ -281,7 +332,7 @@ let melanie =
             "American University. Entering each space as a “good troublemaker” striving for social " +
             "change through youth activism, her passion for social justice sparks the daily courage it " +
             "takes to boldly disrupt inequitable systems by equipping our youth with the powerful tools " +
-            "of social consciousness,  advocacy, and activism.",
+            "of social consciousness,  advocacy, and activism.<br><br>",
         soul:"Melanie.mp3",
         mind: "As I sat quietly in my literature class awaiting my new teacher and more than likely daydreaming about lunch, " +
             "my internal monologue was abruptly paused with a question so loud that I was startled. " +
@@ -293,7 +344,7 @@ let melanie =
             "This question forced each of us students to remember that the purpose of our very presence was to learn " +
             "and that this learning was meant to be active through reflection in each moment of the day. " +
             "This very question also became the question I asked my students once I became a teacher and created a " +
-            "safe space where learning was meant to be seeked, discovered and indulged in within the four walls of our classroom and beyond. ",
+            "safe space where learning was meant to be seeked, discovered and indulged in within the four walls of our classroom and beyond.<br><br> ",
         body: "Melanie.jpg",
         shortname: "Melanie"
     };
@@ -347,7 +398,7 @@ let meghan =
             "Early Childhood Education Journal, Ethnic Studies Pedagogies, Exchange Press, and Early Years: Journal " +
             "of Texas Association for the Education of Young Children. In her forthcoming edited volume, " +
             "'Daughters of (Re)imagined Early Childhood Education: Reflective Narratives of Black Women Educators in Texas During Covid-19'," +
-            " Meghan uses endarkened narrative inquiry to examine the lived experiences and pedagogical development of Black women early childhood educators.",
+            " Meghan uses endarkened narrative inquiry to examine the lived experiences and pedagogical development of Black women early childhood educators.<br><br>",
         soul:"Meghan.mp3",
         mind: "I am accountable to the communities that raised me, and as I navigate all of these marginalized identities, I remember " +
             "these words: It is necessary to teach by living and speaking those truths which we believe and know beyond understanding. " +
@@ -369,7 +420,7 @@ let meghan =
             "years about the Plaisance School and its connection to the Julius Rosenwald Foundation. From my research, I had learned about my paternal " +
             "family’s role in building the school in 1919-1920. Most of what I knew about the history of Plaisance and its community school came " +
             "from conversations with my Maw Maw. She taught elementary school from 1960 to 1996, and she has always been such a wealth of knowledge. " +
-            "She was born in 1937 and followed her older brother, Marion Overton White, to college after graduating from high school.",
+            "She was born in 1937 and followed her older brother, Marion Overton White, to college after graduating from high school.<br><br>",
         body: "Meghan.jpg",
         shortname: "Meghan"
     };

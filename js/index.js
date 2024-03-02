@@ -17,7 +17,7 @@ let compose = function() {
         if (body === 'eve') {
             page = 'Eve.html'
         } else {
-            page= 'compose.html';
+            page= 'dynamic_compose.html';
         }
     }
     sessionStorage.setItem("mind", mind);
