@@ -206,7 +206,7 @@ $(document).ready(function() {
 let daughter =
     {
         name:"Our future daughter",
-        bio: 'DBio',
+        bio: "Our future daughter's bio has not yet been written but we hope.",
         soul: 'Daughter.mp3',
         mind: 'DMind',
         body: 'Daughter.jpg',
