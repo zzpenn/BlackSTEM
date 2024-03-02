@@ -9,6 +9,10 @@ let compose = function() {
     let body = $("#body").val();
     let soul = $("#soul").val();
     let mind = $("#mind").val();
+    if ((body == "") || (soul == "") || (mind == "")) {
+        alert("Please select the mind, body and soul options");
+        return;
+    }
     if ((body === soul) && (body === mind)) {
         if (body === 'eve') {
             page = 'Eve.html'

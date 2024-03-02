@@ -158,7 +158,7 @@ let daughter =
     {
         name:"Our future daughter",
         bio: 'DBio',
-        soul: 'DSoul',
+        soul: 'Daughter.mp3',
         mind: 'DMind',
         body: 'Daughter.jpg',
         shortname: 'Daughter'
@@ -168,7 +168,7 @@ let jessica =
     {
         name:"Dr. Jessica Rush Leeker",
         bio: "JBio",
-        soul:"JSoul",
+        soul:"Jessica.mp3",
         mind: "Raised in a vibrant community that revered education and community service, my upbringing was deeply rooted in Black heritage and academic pursuits. " +
             "This foundation fostered my passion for STEM, guiding me toward a career that intersected with education, specifically in Supply Chain and " +
             "Information Systems, eventually leading to a Ph.D. in Engineering Education. Throughout my academic journey, I encountered mentors who encouraged " +
@@ -201,9 +201,17 @@ let azizi =
 let lois =
     {
         name:"Lois Mailou Jones",
-        bio: "LBio",
-        soul:"LSoul",
-        mind: "LMind",
+        bio: "Lois Mailou Jones was more than an artist; she was a cultural bridge between continents and a pioneering educator. Her work and life story offer invaluable insights into the Black experience, the dynamics of the art world in the 20th century, and the power of art as a tool for social change." +
+            "Born in Boston, Massachusetts, in 1905, Lois Mailou Jones was introduced to a culturally rich society yet segregated by race. Boston's early 20th-century atmosphere was marked by a burgeoning Black intellectual and artistic community despite the racial challenges of the era." +
+            "Jones's parents were instrumental in her early development. Her mother, a talented pianist, and her father, a dedicated building superintendent, emphasized the importance of education and the arts (Johnson, 2018). This nurturing environment cultivated Jones's interest in art from a young age." +
+            "Her education shaped Jones's artistic journey. She attended the Boston High School of Practical Arts and later the School of the Museum of Fine Arts, Boston. Her academic pursuit continued at Howard University, where she became a distinguished faculty member. A scholarship allowed her to study at the prestigious Académie Julian in Paris, broadening her artistic vision and style." +
+            "Jones's tenure at Howard University was marked by her commitment to nurturing the next generation of Black artists. She was a beloved figure who significantly influenced the Washington Color School movement." +
+            "Jones's art evolved from early works influenced by her New England upbringing to vibrant compositions reflecting her travels in France, Haiti, and Africa. Her paintings are celebrated for their intricate designs, bold colors, and thematic depth, exploring themes of race, identity, and social justice." +
+            "As an educator, Jones strived to pass down her love of art, art history, and culture to her students. Her pedagogy and praxis centered the real world application of art as a form of resistance and authentic engagement in liberation movements domestically and abroad." +
+            "Lois Mailou Jones honored her students’ lived experiences and legitimate funds of knowledge over the course of her tenure as an educator. Her dedication to her students’ success went beyond her academic expectations for them. Jones nurtured her students’ love of African Diasporic artistic representations and believed in her role as a co-conspirator and advocate. " +
+            "Jones's legacy is profound. Her work resides in prestigious collections worldwide, including the Smithsonian American Art Museum. She broke racial and gender barriers, paving the way for future generations of artists. Her work inspires discussions on diversity and representation in the arts.",
+        soul:"Lois.mp3",
+        mind: "“The guard saw me looking at the painting and said, ‘I guess you like art, don't you?’ I said to myself that he doesn't know that the painting is mine hanging there. And so that's how it was way back in those early days; I was exhibiting at all of the big museums, but they never knew that I was black because I either shipped my works or had a white person deliver them. Now you see how difficult it was.",
         body: "Lois.jpg",
         shortname: "Lois"
     };
@@ -211,40 +219,50 @@ let lois =
 let eve =
     {
         name:"Eve L. Ewing",
-        bio: "EBio",
-        soul:"ESoul",
-        mind: "Testify<br>" +
+        bio: "Dr. Eve L. Ewing is a writer, scholar, and cultural organizer from Chicago. " +
+            "She is the award-winning author of four books: the poetry collections " +
+            "Electric Arches and 1919, the nonfiction work Ghosts in the Schoolyard: " +
+            "Racism and School Closings on Chicago's South Side, and a novel for young readers," +
+            " Maya and the Robot. She is the co-author (with Nate Marshall) of the play " +
+            "No Blue Memories: The Life of Gwendolyn Brooks. She has written several projects " +
+            "for Marvel Comics, most notably the Ironheart series, and is currently writing Black Panther. " +
+            "Ewing is an associate professor in the Department of Race, Diaspora, and Indigeneity " +
+            "at the University of Chicago. Her work has been published in The New Yorker, " +
+            "The Atlantic, The New York Times, and many other venues. Currently she is working on her next book, " +
+            "Original Sins: The (Mis)education of Black and Native Children and the Construction of American Racism, which will be published by One World. ",
+        soul:"Eve.mp3",
+        mind: "<div class='mind_title'>Testify</div><br>" +
             "i stand before you to say <br>" +
             "that today i walked home<br>" +
             "& caught the light through<br>" +
-            "the fence & it was so golden\n" +
-            "i wanted to cry & i lifted \n" +
-            "my right hand to say thank\n" +
-            "you god for the sun thank \n" +
-            "you god for a chain link fence\n" +
-            "& all the shoes that fit into\n" +
-            "the chain link fence so that\n" +
-            "we might get lifted god thank\n" +
-            "you & i just wanted to dance\n" +
-            "& it feels good to have food\n" +
-            "in your belly & it feels good\n" +
-            "to be home even when home\n" +
-            "is the space between metal\n" +
-            "shapes & still we are golden\n" +
-            "& a man who wore the walk\n" +
-            "of hard grounds & lost days\n" +
-            "came toward me in the street\n" +
-            "& said ‘girl what a beautiful \n" +
-            "day’ & i said yes, testify\n" +
-            "& i walked on & from some\n" +
-            "place a horn rose, an organ,\n" +
-            "a voice, a chorus, here to tell\n" +
-            "you that we are not dead\n" +
-            "we are not dead we are not\n" +
-            "dead we are not dead we are\n" +
-            "not dead we are not dead \n" +
-            "we are not dead we are not\n" +
-            "dead \n" +
+            "the fence & it was so golden<br>" +
+            "i wanted to cry & i lifted<br>" +
+            "my right hand to say thank<br>" +
+            "you god for the sun thank <br>" +
+            "you god for a chain link fence<br>" +
+            "& all the shoes that fit into<br>" +
+            "the chain link fence so that<br>" +
+            "we might get lifted god thank<br>" +
+            "you & i just wanted to dance<br>" +
+            "& it feels good to have food<br>" +
+            "in your belly & it feels good<br>" +
+            "to be home even when home<br>" +
+            "is the space between metal<br>" +
+            "shapes & still we are golden<br>" +
+            "& a man who wore the walk<br>" +
+            "of hard grounds & lost days<br>" +
+            "came toward me in the street<br>" +
+            "& said ‘girl what a beautiful <br>" +
+            "day’ & i said yes, testify<br>" +
+            "& i walked on & from some<br>" +
+            "place a horn rose, an organ,<br>" +
+            "a voice, a chorus, here to tell<br>" +
+            "you that we are not dead<br>" +
+            "we are not dead we are not<br>" +
+            "dead we are not dead we are<br>" +
+            "not dead we are not dead <br>" +
+            "we are not dead we are not<br>" +
+            "dead <br>" +
             "yet",
         body: "Eve.jpg",
         shortname: "Eve"
@@ -313,7 +331,7 @@ let ugochi =
     };
 let meghan =
     {
-        name:"Meghan L. Green EdD.",
+        name:"Meghan L. Green Ed.D.",
         bio: "Meghan L. Green, EdD is an Assistant Professor of Raciolinguistic Justice in Early Childhood Teacher Education at " +
             "Erikson Institute in Chicago, IL. She recently served as the lead researcher on the Illinois Governor’s " +
             "Office in Early Childhood Development (GOECD) funded project studying the dimensions of racial equity of the " +
@@ -331,7 +349,27 @@ let meghan =
             "'Daughters of (Re)imagined Early Childhood Education: Reflective Narratives of Black Women Educators in Texas During Covid-19'," +
             " Meghan uses endarkened narrative inquiry to examine the lived experiences and pedagogical development of Black women early childhood educators.",
         soul:"Meghan.mp3",
-        mind: "MMind",
+        mind: "I am accountable to the communities that raised me, and as I navigate all of these marginalized identities, I remember " +
+            "these words: It is necessary to teach by living and speaking those truths which we believe and know beyond understanding. " +
+            "Because in this way alone we can survive, by taking part in a process of life that is creative and continuing, that is growth " +
+            "(Lorde, 1984, p. 31). Audre Lorde (1984) conceptualized the marginalization of Black queer women in the liberation movements of the " +
+            "1960s, and the idea of the “mythical norm” was born out of this reflective internal dialogue. Black queer women’s" +
+            " experiences are positioned outside of the margins of their white female identifying and Black heterosexual peers. " +
+            "When I was a freshman in college, I read “Zami: A New Spelling of My Name” by Audre Lorde for the first time. I felt a sense of " +
+            "belonging and kinship that I had never felt before. Audre Lorde became a staple in my collection of prose and poetry by " +
+            "Black LGBTQ women. The following life history narrative serves as a journey through my life in and along the margins of identity, " +
+            "just outside of the “mythical norm”." +
+            "There’s something about growing up in southwest Louisiana that grounds my very being. I am the daughter of Creole legacies. " +
+            "My roots extend into places with names that are difficult for outsiders to pronounce like Plaisance, Opelousas, and Bayou Teche. " +
+            "I grew up swimming in ditches on the sides of highways and chewing on sugarcane stalks just for fun. " +
+            "I grew up surrounded by multiple generations of Black educators. Previously, I thought that my Black family " +
+            "teacher lineage began with my paternal grandmother’s generation. Wiona White Thomas, my paternal grandmother aka Maw Maw, " +
+            "was born and raised in Plaisance, Louisiana. She graduated from Plaisance High School in 1956, two years after the U.S. " +
+            "Supreme Court had decided Brown v. Board of Education and ended legal segregation. I had done some research during my undergraduate " +
+            "years about the Plaisance School and its connection to the Julius Rosenwald Foundation. From my research, I had learned about my paternal " +
+            "family’s role in building the school in 1919-1920. Most of what I knew about the history of Plaisance and its community school came " +
+            "from conversations with my Maw Maw. She taught elementary school from 1960 to 1996, and she has always been such a wealth of knowledge. " +
+            "She was born in 1937 and followed her older brother, Marion Overton White, to college after graduating from high school.",
         body: "Meghan.jpg",
         shortname: "Meghan"
     };
