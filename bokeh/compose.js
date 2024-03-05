@@ -226,9 +226,9 @@ let daughter =
             '<br><br>And just remember, if anything gets too much for you, you are the umpteenth generation of some truly tenacious women. ' +
             'It’s our heritage. All of them found a way to make a life for themselves in a time that specifically told them not to. ' +
             'And that’s why we know you can make something out of this life for yourself. ' +
-            'We believe in you. We are all right by you every step of the way even if you think we are not. ' +
+            'We believe in you. We are right by you every step of the way even if you think we are not. ' +
             'How do I know this? Because every time I was at a crossroads, felt tested beyond my capacity, and thought I was all alone, I felt guided. ' +
-            'I felt presence, support and newfound strength that was not entirely all mine. And so, my darling daughter, when you feel stuck and want to ' +
+            'I felt presence, support and newfound strength that was not entirely mine. And so, my darling daughter, when you feel stuck and want to ' +
             'give up, I know that there will be generations of women there for their daughter just like they were there for me. ' +
             '<br><br>-excerpted from Thendral Uthaman’s ‘A Letter to my Future Daughter’<br><br>' +
             '',
