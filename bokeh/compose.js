@@ -207,9 +207,31 @@ $(document).ready(function() {
 let daughter =
     {
         name:"Our future daughter",
-        bio: "Our future daughter's bio has not yet been written but we hope.",
+        bio: "Our future daughter's bio has not yet been written, but we hope she thrives in freedom.",
         soul: 'Daughter.mp3',
-        mind: 'DMind',
+        mind: 'Dear daughter,<br>' +
+            'When I’m writing this, we have yet to cross paths with each other. But I was thinking about meeting you one day and it made me realise ' +
+            'I have some things I want to tell you.<br><br> ' +
+            'I hope you believe in love and find love.  ' +
+            'I want you to find love with yourself. ' +
+            'There will be days where you don’t feel like yourself even in your favourite outfit. Days where you kick yourself for ' +
+            'a careless mistake, or ' +
+            'want the world to pause because you don’t feel ready to face it yet. ' +
+            'Remember that these days don’t define you. These are the days you need to love yourself the hardest. If it’s any comfort, ' +
+            'I will love you all the same on such days, even when I’m not here. ' +
+            '<br><br>I yearn for a world of equity by the time you are reading this. A world that doesn’t subject your beauty to the colour of ' +
+            'your skin and lets you dream to be anything that you want to be. A world that doesn’t question your moves and scrutinise everything you do ' +
+            'simply because you’re a woman. You can be anything you want to be, but I hope by the time you’re reading this, you’re not in a world where ' +
+            'that’s rare, but a world where that is standard fare. ' +
+            '<br><br>And just remember, if anything gets too much for you, you are the umpteenth generation of some truly tenacious women. ' +
+            'It’s our heritage. All of them found a way to make a life for themselves in a time that specifically told them not to. ' +
+            'And that’s why we know you can make something out of this life for yourself. ' +
+            'We believe in you. We are all right by you every step of the way even if you think we are not. ' +
+            'How do I know this? Because every time I was at a crossroads, felt tested beyond my capacity, and thought I was all alone, I felt guided. ' +
+            'I felt presence, support and newfound strength that was not entirely all mine. And so, my darling daughter, when you feel stuck and want to ' +
+            'give up, I know that there will be generations of women there for their daughter just like they were there for me. ' +
+            '<br><br>-excerpted from Thendral Uthaman’s ‘A Letter to my Future Daughter’<br><br>' +
+            '',
         body: 'Daughter.jpg',
         shortname: 'Daughter'
     };
@@ -217,17 +239,16 @@ let daughter =
 let jessica =
     {
         name:"Dr. Jessica Rush Leeker",
-        bio: "JBio",
-        soul:"Jessica.mp3",
-        mind: "Raised in a vibrant community that revered education and community service, my upbringing was deeply rooted in Black heritage and academic pursuits. " +
+        bio: "Raised in a vibrant community that revered education and community service, my upbringing was deeply rooted in Black heritage and academic pursuits. " +
             "This foundation fostered my passion for STEM, guiding me toward a career that intersected with education, specifically in Supply Chain and " +
             "Information Systems, eventually leading to a Ph.D. in Engineering Education. Throughout my academic journey, I encountered mentors who encouraged " +
             "me to envision a STEM education landscape that was inclusive and equitable. " +
             "Teaching at institutions like the University of Colorado Boulder and Purdue University often placed me in situations where I was the sole " +
             "representative of my race and gender. These circumstances, though challenging, refined my educational approach to emphasize critical thinking, " +
-            "problem-solving, and the integration of diverse perspectives. My identity as a Black woman has significantly shaped my teaching philosophy, " +
-            "allowing me to address my students' educational needs and potential with a unique perspective. " +
-            "The underrepresentation of Black women in STEM fields propelled me towards education to mentor, challenge systemic barriers, and foster a " +
+            " problem-solving, and the integration of diverse perspectives. My identity as a Black woman has significantly shaped my teaching philosophy, " +
+            "allowing me to address my students' educational needs and potential with a unique perspective.<br><br>",
+        soul:"Jessica.mp3",
+        mind: "The underrepresentation of Black women in STEM fields propelled me towards education to mentor, challenge systemic barriers, and foster a " +
             "diverse and inclusive community. My experiences in academia, navigating the intricacies of race and gender, have been both challenging and " +
             "rewarding. I’ve created an environment where students feel empowered to explore, question, and innovate." +
             "The evolution of STEM education, an emphasis on social justice, and the recognition of diversity's importance have influenced my teaching " +
@@ -241,9 +262,21 @@ let jessica =
 let azizi =
     {
         name:"Azizi Penn",
-        bio: "ABio",
+        bio: "After graduating with my Master's in Software Engineering, " +
+            "I immediately began teaching undergraduate Computer Science students and enjoyed it. " +
+            "However, my prior experience creating and running summer workshops for 5th - 8th grade students reinforced my belief that reaching students " +
+            "early is a crucial precursor to getting them into undergraduate-level computer science and engineering disciplines. " +
+            "It also showed me that I needed to better equip myself to contribute to college and pre-college arenas. " +
+            "Thus, I am pursuing a Ph.D. in Engineering Education and aspire to become a full-time Computer Science professor. " +
+            "In that role, I hope to institute a multi-disciplinary undergraduate service-learning outreach program that helps college " +
+            "students practice leadership and professional skills and pre-college students find creativity, fun, and career possibilities " +
+            "in computer science and engineering. ",
         soul:"Azizi.mp3",
-        mind: "AMind",
+        mind: "I have an unshakable faith in the ability of students to succeed at whatever they put their minds to. " +
+            "I sometimes seem to believe in students more than they believe in themselves. I see potential in every student. " +
+            "I want them to discover their capabilities and continue learning for life." +
+            "I teach, but I am not a teacher by trade. I have a B.S. in Computer Science and an M.S. in Software Engineering, " +
+            "and have worked in the Software field for over twenty-five years. But, in retrospect, I've been drawn to teaching since childhood.<br><br>",
         body: "Azizi.jpg",
         shortname: "Azizi"
     };
@@ -261,9 +294,14 @@ let lois =
             "Lois Mailou Jones honored her students’ lived experiences and legitimate funds of knowledge over the course of her tenure as an educator. Her dedication to her students’ success went beyond her academic expectations for them. Jones nurtured her students’ love of African Diasporic artistic representations and believed in her role as a co-conspirator and advocate. " +
             "Jones's legacy is profound. Her work resides in prestigious collections worldwide, including the Smithsonian American Art Museum. She broke racial and gender barriers, paving the way for future generations of artists. Her work inspires discussions on diversity and representation in the arts.<br><br><br>",
         soul:"Lois.mp3",
-        mind: "“The guard saw me looking at the painting and said, ‘I guess you like art, don't you?’ I said to myself that he doesn't know that the " +
+        mind: "While in the US, Tabary, a white woman, would take Jones’s paintings to competitions. The juries never knew that the artist was Black. " +
+            "In Jones’s words, “that was very much in my favor.” " +
+            "Jones would often visit the institutions that hung her works and stand in front of her paintings. She recalled:<br><br>" +
+            "“The guard saw me looking at the painting and said, ‘I guess you like art, don't you?’ I said to myself that he doesn't know that the " +
             "painting is mine hanging there. And so that's how it was way back in those early days; I was exhibiting at all of the big museums, " +
-            "but they never knew that I was black because I either shipped my works or had a white person deliver them. Now you see how difficult it was.<br><br>",
+            "but they never knew that I was black because I either shipped my works or had a white person deliver them. Now you see how difficult it was.“<br><br>" +
+            "When Jones won the prize for Indian Shops, she accepted the award by mail to keep her race hidden. Fifty years later, the Corcoran Gallery hosted a " +
+            "retrospective show of her works and publicly apologized for their discrimination.<br><br> ",
         body: "Lois.jpg",
         shortname: "Lois"
     };
