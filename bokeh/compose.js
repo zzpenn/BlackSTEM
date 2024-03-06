@@ -223,7 +223,7 @@ let daughter =
             'your skin and lets you dream to be anything that you want to be. A world that doesn’t question your moves and scrutinise everything you do ' +
             'simply because you’re a woman. You can be anything you want to be, but I hope by the time you’re reading this, you’re not in a world where ' +
             'that’s rare, but a world where that is standard fare. ' +
-            '<br><br>And just remember, if anything gets too much for you, you are the umpteenth generation of some truly tenacious women. ' +
+            '<br><br>And just remember, if anything gets too much for you, you descend from generations of truly tenacious women. ' +
             'It’s our heritage. All of them found a way to make a life for themselves in a time that specifically told them not to. ' +
             'And that’s why we know you can make something out of this life for yourself. ' +
             'We believe in you. We are right by you every step of the way even if you think we are not. ' +

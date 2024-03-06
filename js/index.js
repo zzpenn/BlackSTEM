@@ -27,3 +27,35 @@ let compose = function() {
     sessionStorage.setItem('soul', soul);
     location.assign(comp_url+page);
 }
+
+const
+    screen = {
+        small : null,
+        medium: window.matchMedia('(min-width: 400px)'),
+        large : window.matchMedia('(min-width: 800px)'),
+        xlarge : window.matchMedia('(min-width: 1300px)')
+    },
+
+    confirm  = document.getElementById('confirm');
+
+// add media query events
+for (let [scr, mq] of Object.entries(screen)) {
+    if (mq) mq.addEventListener('change', mqHandler);
+}
+
+// first event
+mqHandler();
+
+// media query handler function
+function mqHandler() {
+
+    let size = null;
+    for (let [scr, mq] of Object.entries(screen)) {
+        if (!mq || mq.matches) size = scr;
+    }
+    if (size != 'xlarge') {
+        alert("We like big screens and we cannot lie.\n This site is best viewed on a wide screen of 1300 pixels or greater.");
+    }
+    
+}
+
